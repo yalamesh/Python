@@ -1,9 +1,0 @@
-Python contains several inbuilt functions.
-In Python every thing is object.
-
-1.type()
-to check the type of variabe
-2.id()
-to get address to object
-3.print()
-to print the value

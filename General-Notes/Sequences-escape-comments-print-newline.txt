@@ -1,0 +1,60 @@
+https://www.scaler.com/topics/escape-sequence-in-python/
+List of Escape Sequence Available in Python
+
+\’	Single quote
+\\’	Double quote
+\\	Backslash
+\n	Newline
+\r	Carriage Return
+\t	Horizontal Tab
+\b	Backspace
+\f	Formfeed
+\v	Vertical Tab
+\0	Null Character
+\N{Name}	Unicode character Database named lookup
+\uxxxxxxxx	Unicode character with a 16-bit hex value
+\Uxxxxxxxx	Unicode character with a 32-bit hex value
+\000	Character with octal value ooo
+\xhh	Character with hex value hh
+https://www.scaler.com/topics/escape-sequence-in-python/
+we want to print who's this.
+
+print("who\'s this?")
+
+"""
+This actually happened because of the backslash (‘\’) before any character tells
+the interpreter that this combination is an escape sequence in python, 
+which removes the backslash from the string and will put the quote inside the string."""
+
+print("who\'s this?")
+
+
+n Escape Sequence in Python
+
+Suppose I give a string, so it will not consider it as a new line. Now, what if we want to print some part of the particular string in the new line?
+
+We can use “\n” here, which tells the interpreter to print some characters in the new line separately.
+
+print("Khammam\nTelangana")
+
+If we want to add tab space between words then this escape sequence will give the tab space between the words or characters using “\t”.
+`print('Interview\tBit')`
+
+Backspace Escape Sequence in Python
+
+This escape sequence is used to remove the space between the words.
+print('Interview \bBit')
+
+Python escape sequence for Hexa value
+
+Now, there may be a situation where we have Hexa values and we want to print alphabets using their Hexa values? In such a case we can use “\xhh”, where hh is the unique Hexa value of the alphabets.
+
+print("\x48\x45\x4C\x4C\x4F\x20\x57\x4F\x52\x4C\x44")
+
+Python escape sequence for Octal value
+
+Now, what if we want to print alphabets using their octal values? So for that, we will use “\ooo”, where ooo is the unique octal value of the alphabets.Python escape sequence ignore
+
+To ignore all the escape sequences in the string, we have to make a string as a raw string using ‘r’ before the string. After that escape sequence will also be consider as normal characters. Let's take an example.
+`print(r"Hello\nWorld")`
+From the example above, you can observe that when we typed ‘r’ before the string, it ignored the escape sequence that is a new line “\n” in the string.
