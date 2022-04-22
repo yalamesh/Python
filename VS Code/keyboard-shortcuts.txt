@@ -1,4 +1,5 @@
 ctrl+? --comment the line
+
 Run Selected Text in Active Terminal
 
 Press Ctrl+K+S to open File -> Preferences -> Keyboard Shortcuts. Search for workbench.action.terminal.runSelectedText in keybindings. Press the icon on the left to open a windnow with this message "Press desired key combination..." and make your choice.
