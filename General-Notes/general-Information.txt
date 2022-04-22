@@ -1,0 +1,2 @@
+In python2 we have long data type to represent very large integral values.
+But in python3 there is no long type explicity and we can represent long values alos byusing int type only.
