@@ -1,0 +1,32 @@
+# Write a Python GUI program
+# using tkinter module
+# to set text "Easy Code Book" in Label
+# on button click. 
+
+import tkinter as tk
+
+
+
+def main():
+    window= tk.Tk()
+    window.title("Show Label and Button Widgets")
+    window.geometry("400x200")
+    
+    # create a label with some text 
+    label1 = tk.Label(window, text="")
+    
+    # place this label in window at position x,y 
+    label1.place(x=130,y=50)
+    txt = "Easy Code Book"
+
+    def btn1_click():
+        label1.configure(text = txt)
+
+    # create a button with text Button 1
+    btn1 = tk.Button(window, text="Click Me", command=btn1_click)
+    # place this button in window at position x,y 
+    btn1.place(x=150,y=100)
+    window.mainloop()
+    
+
+main()
